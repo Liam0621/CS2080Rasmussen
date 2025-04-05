@@ -112,8 +112,17 @@ cond_test(){
 # Now write a function that prints two numbers on screen and takes an input. if
 # the input equals to the sum of the two number, it prints "correct" else it
 # prints "incorrect"
-
-
+sum_func(){
+	num_one=24
+	num_two=16
+	echo "what is the sum of $num_one and $num_two?"
+	read user_input
+	if [[ "$user_input" -eq $((num_one + num_two)) ]]; then
+		echo "correct"
+	else
+		echo "incorrect"
+	fi
+}
 
 ############################
 # Once done with it 
