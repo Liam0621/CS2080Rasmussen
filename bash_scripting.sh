@@ -123,6 +123,7 @@ sum_func(){
 		echo "incorrect"
 	fi
 }
+sum_func
 
 ############################
 # Once done with it 
@@ -153,3 +154,4 @@ sum_infinite(){
 		fi
 	done
 }
+#sum_infinite
