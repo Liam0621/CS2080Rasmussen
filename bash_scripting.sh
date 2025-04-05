@@ -18,7 +18,7 @@ echo "$variable_name"
 ############
 # Now print the following using the variable
 # "Here is the value of the variable: something"
-
+echo "Here is the value of the variable: $variable_name"
 ###########
 
 # We learned that output of a command is a stream of data that can be treated as
