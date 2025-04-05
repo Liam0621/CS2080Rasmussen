@@ -138,3 +138,18 @@ sum_func(){
 # Note $RANDOM gives a big random number. But taking a modulo of that number
 # with any number n would ensure that the random number is always within the
 # range of 1-n
+
+sum_infinite(){
+	while :
+	do
+		num_one=$((RANDOM % 10 + 1))
+		num_two=$((RANDOM % 10 + 1))
+		echo "What is the sum of $num_one and num_two?"
+		read user_input
+		if [[ "$user_input" -eq $((num_one + num_two)) ]]; then
+			echo "correct"
+		else
+			echo "incorrect"
+		fi
+	done
+}
